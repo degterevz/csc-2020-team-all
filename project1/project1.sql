@@ -42,7 +42,6 @@ CREATE TABLE delegation(
     -- Связь 1:1 между делегациями и объектами. В одном объекте может располагаться только одна делегация и наоборот.
 	FOREIGN KEY(house_id) REFERENCES object_(id)
 );
-.
 
 -- Служебная таблица для пола
 CREATE TYPE sex AS ENUM('Мужской', 'Женский', 'Custom');
